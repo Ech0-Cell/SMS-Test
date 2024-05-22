@@ -26,20 +26,20 @@ These instructions will help you set up the project on your local machine for de
 
 ### Installation
 
-1. **Clone the repository:**
+1. Clone the repository:
 
     ```bash
     git clone https://github.com/yourusername/sms-dev-app.git
     cd sms-dev-app
     ```
 
-2. **Build the project using Maven:**
+2. Build the project using Maven:
 
     ```bash
     mvn clean install
     ```
 
-3. **Run the application:**
+3. Run the application:
 
     ```bash
     mvn exec:java -Dexec.mainClass="org.example.Main"
@@ -88,22 +88,25 @@ Exit:
 Select option 3 to exit the application.
 
 Test Cases
-Test Case 1: Create Subscriber Successfully
-Description: Verify that a new subscriber can be created successfully.
-Expected Result: The message "Subscriber created successfully!" is displayed.
-Test Case 2: Create Subscriber with Invalid Data
-Description: Verify that the application handles invalid input data gracefully.
-Expected Result: An error message is displayed and the subscriber is not created.
-Test Case 3: Login Subscriber Successfully
-Description: Verify that a subscriber can log in successfully.
-Expected Result: The message "Logged in successfully!" is displayed and a token is returned.
-Test Case 4: Login Subscriber with Invalid Credentials
-Description: Verify that the application handles invalid login credentials appropriately.
-Expected Result: An error message is displayed indicating invalid credentials.
+Here are the implemented test cases along with their single-line descriptions:
 
-Screenshots(WILL ADD LATER)
-Home Screen
+1. TC_001: Create Subscriber
+   - Tests the functionality to create a new subscriber by providing necessary information.
 
-Create Subscriber Screen
+2. TC_002: Show Remaining Balance List
+   - Verifies the capability to retrieve and display the remaining balance list after logging in.
 
-Login Subscriber Screen
+3. TC_003: User Login Authentication
+   - Validates the authentication process for user login.
+
+4. TC_004: User Registration Validation
+   - Checks the validation process for user registration.
+
+5. TC_005: User Logout Functionality
+   - Tests the functionality to log out a user after completing tasks.
+
+6. TC_006: Send SMS Message
+   - Validates the capability to send an SMS message after logging in.
+
+7. TC_007: View SMS Inbox
+   - Verifies the ability to view the SMS inbox after logging in.
